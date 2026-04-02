@@ -1,5 +1,5 @@
-name: Nautilus SecureSDLC
-run-name: "[Nautilus SecureSDLC] Ref:${{ github.ref_name }} Event:${{ github.event_name }}"
+name: Nautilus SecureSDLC Required
+run-name: "[Nautilus SecureSDLC Required] Ref:${{ github.ref_name }} Event:${{ github.event_name }}"
 
 on:
   workflow_dispatch: {}
@@ -17,3 +17,4 @@ jobs:
     secrets:
       SEMGREP_APP_URL: ${{ secrets.SEMGREP_APP_URL }}
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
+      SDLC_SLACK_NOTIFICATIONS: ${{ secrets.SDLC_SLACK_NOTIFICATIONS }}      
